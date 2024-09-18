@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetrarealm Form</title>
+    <link rel="stylesheet" href="{% static 'css/registrations/tetrarealm.css' %}">
+</head>
+<body>
+    <div id="page" class="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="/" class="span">GSSE Synfinity</a></div>
+                    <div class="logo"><a href="/competitions/tetrarealm" class="span">Tetrarealm</a></div>
+                    <ul class="progress-steps">
+                        <li class = "step">
+                            <span>1</span>
+                            <p>School</p>
+                        </li>
+                        <li class = "step">
+                            <span>2</span>
+                            <p>Member</p>
+                        </li>
+                        <li class = "step">
+                            <span>3</span>
+                            <p>Contact</p>
+                        </li>
+                        <li class = "step">
+                            <span>4</span>
+                            <p>Review</p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" method="POST">
+                    <div class="form-one form-step">
+                        <div class="bg-svg"></div>
+                        <h2>School Info</h2>
+                        <p>Enter School Info</p>
+                        <div>
+                            <label>School Name</label>
+                            <input id="sklName" type="text"  placeholder=""eg., Gnan Srishti>
+                        </div>
+                        <div>
+                            <label>School Email</label>
+                            <input id="sklEmail" type="email"  placeholder=""eg., info@gsshsr.com>
+                        </div>
+                        <div>
+                            <label>Accompanying Teacher</label>
+                            <input id="accTeach" type="text"  placeholder=""eg., Hi>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Team Info</h2>
+                        <p>Enter Team Name, Team Members' Name and Class.</p>
+                        <div>
+                            <label>Team Name</label>
+                            <input id="teamName" type="text"  placeholder="John">
+                        </div>
+                        <div>
+                            <label>Student 1 Name</label>
+                            <input id="std1Name" type="text"  placeholder="John">
+                        </div>
+                        <div>
+                            <label>Student 1 Class</label>
+                            <select id="std1Class"  name="class" id="class">
+                                <option value="">Please Select</option>
+                                <option value="IX">IX</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Student 2 Name</label>
+                            <input id="std2Name" type="text"  placeholder="John">
+                        </div>
+                        <div>
+                            <label>Student 2 Class</label>
+                            <select id="std2Class" name="class"  id="class">
+                                <option value="">Please Select</option>
+                                <option value="IX">IX</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Student 3 Name</label>
+                            <input id="std3Name" type="text"  placeholder="John">
+                        </div>
+                        <div>
+                            <label>Student 3 Class</label>
+                            <select  id="std3Class"  name="class" id="class">
+                                <option value="">Please Select</option>
+                                <option value="IX">IX</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-three form-step">
+                        <div class="bg-svg">
+                            <h2>Contact Info</h2>
+                            <p>Enter Contact Info. Remember these emails for future use.</p>
+                        </div>
+                        <div>
+                            <label>Team Contact Email</label>
+                            <input id="teamEmail" type="email"  placeholder=""eg., me@example.com>
+                        </div>
+                        <div>
+                            <label>Teacher Contact Email</label>
+                            <input id="teachEmail" type="email"  placeholder=""eg., me@example.com>
+                        </div>
+                    </div>
+                    <div class="form-four form-step">
+                        <div class="bg-svg">
+                            <h2>Reveiw</h2>
+                            <p>Ensure everything is correct.</p>
+                        </div>
+                        <div>
+                            <p>School Name</p>
+                            <p id="sklNameR"></p>
+                        </div>
+                        <div>
+                            <p>School Email</p>
+                            <p id="sklEmailR"></p>
+                        </div>
+                        <div>
+                            <p>Accompanying Teaching</p>
+                            <p id="accTeachR"></p>
+                        </div>
+                        <div>
+                            <p>Team Name</p>
+                            <p id="teamNameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 1 Name</p>
+                            <p id="std1NameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 1 Class</p>
+                            <p id="std1ClassR"></p>
+                        </div>
+                        <div>
+                            <p>Student 2 Name</p>
+                            <p id="std2NameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 2 Class</p>
+                            <p id="std2ClassR"></p>
+                        </div>
+                        <div>
+                            <p>Student 3 Name</p>
+                            <p id="std3NameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 3 Class</p>
+                            <p id="std3ClassR"></p>
+                        </div>
+                        <div>
+                            <p>Team Contact Email</p>
+                            <p id="teamEmailR"></p>
+                        </div>
+                        <div>
+                            <p>Teacher Email</p>
+                            <p id="teachEmailR"></p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disable>Back</button>
+                        <button type="button" class="btn-next">Next Step</button>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src = "{% static 'js/registrations/tetrarealm.js' %}"></script>
+</body>
+</html>
