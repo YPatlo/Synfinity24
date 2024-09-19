@@ -34,22 +34,22 @@
                         </li>
                     </ul>
                 </div>
-                <form action="" method="POST">
+                <form action="" method="POST"> {% csrf_token %}
                     <div class="form-one form-step">
                         <div class="bg-svg"></div>
                         <h2>School Info</h2>
                         <p>Enter School Info</p>
                         <div>
                             <label>School Name</label>
-                            <input id="sklName" type="text" placeholder=""eg., Gnan Srishti>
+                            <input id="sklName" name="sklName" type="text" placeholder=""eg., Gnan Srishti>
                         </div>
                         <div>
                             <label>School Email</label>
-                            <input id="sklEmail" type="email" placeholder=""eg., info@gsshsr.com>
+                            <input id="sklEmail" name="sklEmail" type="email" placeholder=""eg., info@gsshsr.com>
                         </div>
                         <div>
                             <label>Accompanying Teacher</label>
-                            <input id="accTeach" type="text" placeholder=""eg., Hi>
+                            <input id="accTeach" name="accTeach" type="text" placeholder=""eg., Hi>
                         </div>
                     </div>
                     <div class="form-two form-step">
@@ -58,15 +58,15 @@
                         <p>Enter Team Name, Team Members' Name and Class.</p>
                         <div>
                             <label>Team Name</label>
-                            <input id="teamName" type="text" placeholder="John">
+                            <input id="teamName" name="teamName" type="text" placeholder="John">
                         </div>
                         <div>
                             <label>Student 1 Name</label>
-                            <input id="std1Name" type="text" placeholder="John">
+                            <input id="std1Name" name="std1Name" type="text" placeholder="John">
                         </div>
                         <div>
                             <label>Student 1 Class</label>
-                            <select id="std1Class" name="class" id="class">
+                            <select id="std1Class" name="std1Class" id="class">
                                 <option value="">Please Select</option>
                                 <option value="IX">IX</option>
                                 <option value="X">X</option>
@@ -76,11 +76,11 @@
                         </div>
                         <div>
                             <label>Student 2 Name</label>
-                            <input id="std2Name" type="text" placeholder="John">
+                            <input id="std2Name" name="std2Name" type="text" placeholder="John">
                         </div>
                         <div>
                             <label>Student 2 Class</label>
-                            <select id="std2Class" name="class" id="class">
+                            <select id="std2Class" name="std2Class" id="class">
                                 <option value="">Please Select</option>
                                 <option value="IX">IX</option>
                                 <option value="X">X</option>
@@ -90,11 +90,11 @@
                         </div>
                         <div>
                             <label>Student 3 Name</label>
-                            <input id="std3Name" type="text" placeholder="John">
+                            <input id="std3Name" name="std3Name" type="text" placeholder="John">
                         </div>
                         <div>
                             <label>Student 3 Class</label>
-                            <select  id="std3Class" name="class" id="class">
+                            <select  id="std3Class" name="std3Class" id="class">
                                 <option value="">Please Select</option>
                                 <option value="IX">IX</option>
                                 <option value="X">X</option>
@@ -104,11 +104,11 @@
                         </div>
                         <div>
                             <label>Student 4 Name</label>
-                            <input id="std4Name" type="text" placeholder="John">
+                            <input id="std4Name" name="std4Name" type="text" placeholder="John">
                         </div>
                         <div>
                             <label>Student 4 Class</label>
-                            <select  id="std4Class" name="class" id="class">
+                            <select  id="std4Class" name="std4Class" id="class">
                                 <option value="">Please Select</option>
                                 <option value="IX">IX</option>
                                 <option value="X">X</option>
@@ -124,11 +124,11 @@
                         </div>
                         <div>
                             <label>Team Contact Email</label>
-                            <input id="teamEmail" type="email" placeholder=""eg., me@example.com>
+                            <input id="teamEmail" name="teamEmail" type="email" placeholder=""eg., me@example.com>
                         </div>
                         <div>
                             <label>Teacher Contact Email</label>
-                            <input id="teachEmail" type="email" placeholder=""eg., me@example.com>
+                            <input id="teachEmail" name="teachEmail" type="email" placeholder=""eg., me@example.com>
                         </div>
                     </div>
                     <div class="form-four form-step">

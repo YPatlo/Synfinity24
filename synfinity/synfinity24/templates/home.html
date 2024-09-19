@@ -27,6 +27,16 @@
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
       }(window, document);
     </script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "LuMoungCnG123hQSy",
+        });
+      })();
+    </script>
     <link href="{% static 'images/favicon.png' %}" rel="shortcut icon" type="image/x-icon" />
     <link href="{% static 'images/app-icon.png' %}" rel="apple-touch-icon" />
     <!-- Please keep this css code to improve the font quality-->
@@ -644,7 +654,7 @@
                 <div class="spacer _32"></div>
                 <div class="form-card">
                   <div class="form-2 w-form">
-                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="66e41e67ae4c40445284cff6" data-wf-element-id="b26fac43-b52b-9994-c206-3498628c707c">
+                    <form action="" id="email-form" name="email-form" data-name="Email Form" method="POST" class="form-2" data-wf-page-id="66e41e67ae4c40445284cff6" data-wf-element-id="b26fac43-b52b-9994-c206-3498628c707c">  {% csrf_token %}
                       <div class="w-layout-grid form-2-grid">
                         <div class="field-block">
                           <label for="First-Name">First name*</label>
@@ -663,7 +673,7 @@
                         <label for="Message">Your Message*</label>
                         <textarea id="Message-2" name="Message-2" maxlength="5000" data-name="Message 2" placeholder="Enter message here" required="" class="text-area w-input"></textarea>
                       </div>
-                      <input type="submit" data-wait="Please wait..." class="button-2 no-margin w-button" value="Send Message" />
+                      <input type="submit" onclick="sendMail()" data-wait="Please wait..." class="button-2 no-margin w-button" value="Send Message" />
                     </form>
                     <div class="form-success w-form-done">
                       <div>Your request has been submitted and we will get to you shortly.</div>
@@ -738,5 +748,15 @@
     </div>
     <script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/webflow-script.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+      function sendMail(){
+        let parms ={
+          Name : document.getElementById("First-Name-2").value + document.getElementById("Last-Name-2").value,
+          Email : document.getElementById("Email-2").value,
+          Message : document.getElementById("Message-2").value,
+        }
+        emailjs.send("service_tre91gp","template_r3pnuub",parms).then(alert("We'll reply shortly."))
+      }
+    </script>
   </body>
 </html>
