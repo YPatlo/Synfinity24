@@ -243,3 +243,12 @@
       top: auto;
     }
   }
+  input:invalid{
+    display: flex;
+    border-color: red;
+  }
+  .form-four.form-step > div > p{
+    color: black;
+    line-height: 10px;
+    margin-bottom: 0.5 em;
+  }

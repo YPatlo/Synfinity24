@@ -208,6 +208,17 @@
     color: var(--light-color);
   }
   
+  input:invalid{
+    display: flex;
+    border-color: red;
+  }
+
+  .form-four.form-step > div > p{
+    color: black;
+    line-height: 10px;
+    margin-bottom: 0.5 em;
+  }
+
   @media screen and (min-width: 768px){
     .form-box .progress{
       flex: 1 0 35%;

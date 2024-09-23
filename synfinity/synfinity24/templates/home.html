@@ -27,8 +27,8 @@
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
       }(window, document);
     </script>
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
       (function(){
@@ -177,7 +177,7 @@
                               <a data-w-id="38a87566-d4ad-de39-9144-52828fb72626" href="/register" class="underline-link w-inline-block">
                                 <div class="button-text">
                                   <div class="button-text-item">Register</div>
-                                  <div class="button-text-item">Buy my tickets</div>
+                                  <div class="button-text-item">Hurry Up!</div>
                                 </div>
                                 <div class="icon w-embed">
                                   <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,8 +264,9 @@
           <section class="section-sticky-cards">
             <div class="sticky-card">
               <div id="one" class="sticky-anchor"></div>
-              <div class="sticky-base sticky-first-base">
+              <div class="sticky-base sticky-first-base" style="flex-direction: column; align-items: center;">
                 <img src="{% static 'images/screenshot_2024-09-03_211453-removebg-preview.png' %}" loading="lazy" width="975" height="375" alt="" class="image" />
+                <p class="datenov" style="font-size: 36px;">Held on 22nd November.</p>
               </div>
               <div id="two" class="sticky-anchor"></div>
               <div class="sticky-base sticky-second-base">
@@ -719,9 +720,24 @@
                           </a>
                         </div>
                         <div class="social-list">
-                          <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block"></a>
-                          <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block"></a>
-                          <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block"></a>
+                          <div id = social" class="social">
+                            <a href="https://www.linkedin.com/company/gsse-synfinity" class="icon linkedin">
+                               <div class="tooltip">LinkedIn</div>
+                               <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            </a>
+                            <a href="https://www.instagram.com/gsse.synfinity" class="icon instagram">
+                               <div class="tooltip">Instagram</div>
+                               <span><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="https://github.com/YPatlo/Synfinity24" class="icon github">
+                               <div class="tooltip">Github</div>
+                               <span><i class="fab fa-github"></i></span>
+                            </a>
+                            <a href="https://www.youtube.com/@gnansrishtischoolofexcelle5117" class="icon youtube">
+                               <div class="tooltip">YouTube</div>
+                               <span><i class="fab fa-youtube"></i></span>
+                            </a>
+                         </div>
                         </div>
                       </div>
                     </div>
