@@ -18,4 +18,5 @@ urlpatterns = [
     path("registrations/tetrarealm", views.tetrarealmReg, name='tetrarealmReg'),
     path("registrations/resonance", views.resonanceReg, name='resonaceReg'),
     path("registrations/vortex-ventures", views.vortexVenturesReg, name='votexVenturesReg'),
+    path("_", views.reload, name='reload'),
 ]

@@ -1951,6 +1951,9 @@ textarea.w-input, textarea.w-select {
   position: relative;
 }
 
+.navbar.w-nav{
+  z-index: 9999;
+}
 .w-nav-overlay {
   width: 100%;
   display: none;
@@ -2032,6 +2035,15 @@ textarea.w-input, textarea.w-select {
 @media screen and (max-width: 767px) {
   .w-nav[data-collapse="small"] .w-nav-menu {
     display: none;
+  }
+
+  .sticky-content.descript{
+    padding-top: 72px;
+  }
+
+  .text-size-regular.text-style-italic.whatis{
+    padding-top: 90px;
+    line-height: 1 !important;
   }
 
   .w-nav[data-collapse="small"] .w-nav-button {

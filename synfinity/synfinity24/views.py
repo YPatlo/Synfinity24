@@ -1,5 +1,7 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from .models import *
+
 
 # Create your views here.
 def home(request):
@@ -165,3 +167,6 @@ def vortexVenturesReg(request):
 
 def register(request):
     return render(request, 'register.html')
+
+def reload(request):
+    return HttpResponse("Hello World")
