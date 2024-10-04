@@ -768,7 +768,9 @@
           Email : document.getElementById("Email-2").value,
           Message : document.getElementById("Message-2").value,
         }
-        emailjs.send("service_tre91gp","template_r3pnuub",parms).then(alert("We'll reply shortly."))
+        if (parms.Email != null && parms.Email !="" && parms.Message != null && parms.Message != "" ){
+          emailjs.send("service_tre91gp","template_r3pnuub",parms)
+        }
       }
     </script>
   </body>

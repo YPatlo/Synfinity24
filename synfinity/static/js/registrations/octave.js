@@ -5,6 +5,10 @@ const steps = document.querySelectorAll('.form-step');
 const form_steps = document.querySelectorAll('.step');
 let active = 1;
 
+submitButton.addEventListener('click', () => {
+    window.location.href = "https://synfinity.gsshsr.in/registrations/success";
+})
+
 nextButton.addEventListener('click', () => {
     active++;
     if(active > steps.length){
