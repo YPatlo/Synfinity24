@@ -65,9 +65,10 @@ const confirmData = () => {
 
     for(let j = 0; j < data.length; j++){
         if (data[j] == null || data[j] == ""){
-            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red. The number of times you see this promopt is the number of fields you have not filled.");
+            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red.");
             active = 1;
             updateProgress();
+            break;
         }
     }
     document.getElementById('sklNameR').innerHTML = sklName;

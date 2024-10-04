@@ -48,6 +48,8 @@ def octaveReg(request):
         newOctave = Octave(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newOctave.save()
 
+        return render(request, 'registrations/success.html')
+
     return render(request, 'registrations/octave.html')
 
 def enigmaReg(request):
@@ -62,6 +64,8 @@ def enigmaReg(request):
 
         newEnigma = Enigma(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newEnigma.save()
+
+        return render(request, 'registrations/success.html')
 
     return render(request, 'registrations/enigma.html')
 
@@ -83,6 +87,8 @@ def logoLegendsReg(request):
         newLogoLengends = LogoLegends(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newLogoLengends.save()
 
+        return render(request, 'registrations/success.html')
+
     return render(request, 'registrations/logo-legends.html')
 
 def tetrarealmReg(request):
@@ -103,6 +109,8 @@ def tetrarealmReg(request):
         newTetrarealm = Tetrarealm(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newTetrarealm.save()
 
+        return render(request, 'registrations/success.html')
+
     return render(request, 'registrations/tetrarealm.html')
 
 def imaginArteReg(request):
@@ -120,6 +128,8 @@ def imaginArteReg(request):
 
         newImaginArte = ImaginArte(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newImaginArte.save()
+
+        return render(request, 'registrations/success.html')
 
     return render(request, 'registrations/imagin-arte.html')
 
@@ -140,6 +150,8 @@ def resonanceReg(request):
 
         newResonance = Resonance(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newResonance.save()
+
+        return render(request, 'registrations/success.html')
         
     return render(request, 'registrations/resonance.html')
 
@@ -163,6 +175,8 @@ def vortexVenturesReg(request):
         newVortexVentures = VortexVentures(schoolName=schoolName, schoolEmail=schoolEmail, accTeacher=accTeacher, teamName=teamName, std1Name=std1Name, std2Name=std2Name, std3Name=std3Name, std4Name=std4Name, std1Class=std1Class, std2Class=std2Class, std3Class=std3Class, std4Class=std4Class, teamEmail=teamEmail, teacherEmail=teacherEmail)
         newVortexVentures .save()
 
+        return render(request, 'registrations/success.html')
+
     return render(request, 'registrations/vortex-ventures.html')
 
 def register(request):
@@ -170,3 +184,6 @@ def register(request):
 
 def reload(request):
     return HttpResponse("Hello World")
+
+def success(request):
+    return render(request, 'registrations/success.html')
