@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render
 from .models import *
 
@@ -183,7 +183,8 @@ def register(request):
     return render(request, 'register.html')
 
 def reload(request):
-    return HttpResponse("Hello World")
+    myDict = {"a":1}
+    return JsonResponse(myDict)
 
 def success(request):
     return render(request, 'registrations/success.html')
