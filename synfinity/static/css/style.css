@@ -4,6 +4,11 @@ html {
     font-family: sans-serif;
   }
   
+  strong{
+    font-size: 30px;
+    color: #155747;
+  }
+
   body {
     margin: 0;
   }

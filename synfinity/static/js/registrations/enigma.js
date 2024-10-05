@@ -42,7 +42,6 @@ const updateProgress = () => {
 
     if (active == 1){
         prevButton.disabled = true;
-        nextButton.disabled = false;
     } else if (active == steps.length){
         nextButton.disabled = true;
         confirmData(); 
@@ -56,12 +55,15 @@ const confirmData = () => {
     sklName = document.getElementById('sklName').value;
     sklEmail = document.getElementById('sklEmail').value;
     accTeach = document.getElementById('accTeach').value;
+    teamName = document.getElementById('teamName').value;
     std1Name = document.getElementById('std1Name').value;
     std1Class = document.getElementById('std1Class').value;
+    std2Name = document.getElementById('std2Name').value;
+    std2Class = document.getElementById('std2Class').value;
     teamEmail = document.getElementById('teamEmail').value;
     teachEmail = document.getElementById('teachEmail').value;
 
-    const data =[sklName,sklEmail,accTeach,std1Name,std1Class,teamEmail,teachEmail];
+    const data =[sklName,sklEmail,accTeach,std1Name,std1Class,std2Class,std2Name,teamName,teamEmail,teachEmail];
 
     for(let j = 0; j < data.length; j++){
         if (data[j] == null || data[j] == ""){
@@ -75,8 +77,11 @@ const confirmData = () => {
     document.getElementById('sklNameR').innerHTML = sklName;
     document.getElementById('sklEmailR').innerHTML = sklEmail;
     document.getElementById('accTeachR').innerHTML = accTeach;
+    document.getElementById('teamNameR').innerHTML = teamName;
     document.getElementById('std1NameR').innerHTML = std1Name;
     document.getElementById('std1ClassR').innerHTML = std1Class;
+    document.getElementById('std2NameR').innerHTML = std2Name;
+    document.getElementById('std2ClassR').innerHTML = std2Class;
     document.getElementById('teamEmailR').innerHTML = teamEmail;
     document.getElementById('teachEmailR').innerHTML = teachEmail;
 }

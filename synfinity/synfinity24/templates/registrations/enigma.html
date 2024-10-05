@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enigma Form</title>
-    <link rel="stylesheet" href="{% static 'css/registrations/enigma.css' %}">
     <link rel="icon" type="image/x-icon" href="{% static 'images/synfintiy-20transaprent.png' %}">
+    <link rel="stylesheet" href="{% static 'css/registrations/enigma.css' %}">
 </head>
 <body>
     <div id="page" class="site">
@@ -54,15 +54,33 @@
                     </div>
                     <div class="form-two form-step">
                         <div class="bg-svg"></div>
-                        <h2>Student Info</h2>
-                        <p>Enter Student Name and Class.</p>
+                        <h2>Team Info</h2>
+                        <p>Enter Team Name, Team Members' Name and Class.</p>
                         <div>
-                            <label>Student Name</label>
+                            <label>Team Name</label>
+                            <input required id="teamName" name="teamName" type="text"  placeholder=" ">
+                        </div>
+                        <div>
+                            <label>Student 1 Name</label>
                             <input required id="std1Name" name="std1Name" type="text"  placeholder=" ">
                         </div>
                         <div>
-                            <label>Student Class</label>
+                            <label>Student 1 Class</label>
                             <select id="std1Class"  name="std1Class" id="class">
+                                <option value="">Please Select</option>
+                                <option value="IX">IX</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Student 2 Name</label>
+                            <input required id="std2Name" name="std2Name" type="text"  placeholder=" ">
+                        </div>
+                        <div>
+                            <label>Student 2 Class</label>
+                            <select id="std2Class" name="std2Class"  id="class">
                                 <option value="">Please Select</option>
                                 <option value="IX">IX</option>
                                 <option value="X">X</option>
@@ -77,7 +95,7 @@
                             <p>Enter Contact Info. Remember these emails for future use.</p>
                         </div>
                         <div>
-                            <label>Student Contact Email</label>
+                            <label>Team Contact Email</label>
                             <input required id="teamEmail" name="teamEmail" type="text"  placeholder=""eg., me@example.com>
                         </div>
                         <div>
@@ -103,15 +121,27 @@
                             <p id="accTeachR"></p>
                         </div>
                         <div>
-                            <p>Student Name</p>
+                            <p>Team Name</p>
+                            <p id="teamNameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 1 Name</p>
                             <p id="std1NameR"></p>
                         </div>
                         <div>
-                            <p>Student Class</p>
+                            <p>Student 1 Class</p>
                             <p id="std1ClassR"></p>
                         </div>
                         <div>
-                            <p>Student Contact Email</p>
+                            <p>Student 2 Name</p>
+                            <p id="std2NameR"></p>
+                        </div>
+                        <div>
+                            <p>Student 2 Class</p>
+                            <p id="std2ClassR"></p>
+                        </div>
+                        <div>
+                            <p>Team Contact Email</p>
                             <p id="teamEmailR"></p>
                         </div>
                         <div>
