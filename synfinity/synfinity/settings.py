@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.synfinity.gsshsr.com', 'https://localhost:8000', 'https://*.127.0.0.1', 'https://*.gssesynfinity.onrender.com',]
+CSRF_TRUSTED_ORIGINS = ['https://*.synfinity.gsshsr.in', 'https://localhost:8000', 'https://*.127.0.0.1', 'https://*.gssesynfinity.onrender.com',]
 
 ROOT_URLCONF = "synfinity.urls"
 
