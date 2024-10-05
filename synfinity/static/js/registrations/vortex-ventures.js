@@ -42,6 +42,7 @@ const updateProgress = () => {
 
     if (active == 1){
         prevButton.disabled = true;
+        nextButton.disabled = false;
     } else if (active == steps.length){
         nextButton.disabled = true;
         confirmData();
