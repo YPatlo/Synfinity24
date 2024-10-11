@@ -88,10 +88,8 @@ class Resonance(models.Model):
     teamName = models.TextField()
     std1Name = models.TextField()
     std2Name = models.TextField()
-    std3Name = models.TextField()
     std1Class = models.TextField()
     std2Class = models.TextField()
-    std3Class = models.TextField()
     teamEmail = models.TextField()
     teacherEmail = models.TextField()
     def __str__(self):
