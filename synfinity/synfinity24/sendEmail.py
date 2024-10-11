@@ -37,7 +37,12 @@ def sendEmailPy(event, sklEmail, sklName, teachEmail, accTeach, teamEmail, teamN
             "contactDetails": "School Email: " + sklEmail + "\nTeam Email: " + teamEmail + "\nAccompanying Teacher Email: " + teachEmail,
             "email": sklEmail + " &  " + teamEmail + " & " + teachEmail
         }
-    send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(template_id=templateId, params=params, to=to, bcc=bcc, reply_to=reply_to)
+    headers = {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "api-key": os.environ['API_KEY']
+        }
+    send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(template_id=templateId, params=params, to=to, bcc=bcc, reply_to=reply_to, headers=headers)
 
     try:
         api_response = api_instance.send_transac_email(send_smtp_email)
