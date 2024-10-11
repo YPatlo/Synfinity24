@@ -1,14 +1,14 @@
 :root{
-    --main-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --lighter-color: #e0e0e7;
-    --dark-color: #52505e;
-    --light-color: #b0b0c0;
-  
-  
-    --font-smaller: 14px;
-    --font-bigger: 20px;
-  }
+  --main-color: #01584a;
+  --secondary-color: #4dafa2;
+  --lighter-color: #e0e0e7;
+  --dark-color: #09003f;
+  --light-color: #62a38e;
+
+
+  --font-smaller: 14px;
+  --font-bigger: 20px;
+}
   *{
     margin: 0;
     padding: 0;
@@ -20,12 +20,12 @@
     scroll-behavior: smooth;
   }
   body{
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    color: var(--dark-color);
-    background: var(--dark-color);
+    background-color: #33383f;
+    background-image: radial-gradient(circle at 100% 0, #231f74, #f3898900 75%), radial-gradient(circle at 0%, #1e2948, #0000 45%), radial-gradient(circle at 40% 130%, #f7975c, #0000 89%);
   }
   a{
     text-decoration: none;
@@ -64,7 +64,7 @@
     font-size: 1.75em;
     font-weight: 800;
     color: var(--dark-color);
-    padding: 40px 48px;
+    padding: 0;
     text-align: center;
   }
   .logo span{
@@ -72,7 +72,7 @@
   }
   .progress ul.progress-steps{
     display: flex;
-    margin-left: 3.5em;
+    margin-left: 0;
     flex-direction: row;
     align-items: left;
     justify-content: center;
@@ -219,6 +219,8 @@
     }
     .logo{
       margin: -48px -48px 48px;
+      padding: 40px 48px;
+      margin-left: 3.5em;
     }
     .progress ul.progress-steps{
       flex-direction: column;

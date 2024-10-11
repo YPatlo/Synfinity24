@@ -4,6 +4,11 @@ html {
     font-family: sans-serif;
   }
   
+  strong{
+    font-size: 30px;
+    color: #155747;
+  }
+
   body {
     margin: 0;
   }
@@ -923,7 +928,22 @@ html {
     .w-container {
       max-width: none;
     }
-  
+    .container.w-container{
+      margin-bottom: 100px;
+    }
+    .paragraph.large{
+      padding-top: 75px;
+    }
+    .w-layout-grid.grid-3{
+      display: flex;
+      flex-direction: column;
+    }
+    .text-box._500px{
+      display:none;
+    }
+    .ebook-mobile-block{
+      display: none;
+    }
     .w-hidden-main, .w-hidden-medium, .w-hidden-small {
       display: inherit !important;
     }

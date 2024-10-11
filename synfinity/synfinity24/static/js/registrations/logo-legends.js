@@ -5,6 +5,10 @@ const steps = document.querySelectorAll('.form-step');
 const form_steps = document.querySelectorAll('.step');
 let active = 1;
 
+submitButton.addEventListener('click', () => {
+    window.location.href = "https://synfinity.gsshsr.in/registrations/success";
+})
+
 nextButton.addEventListener('click', () => {
     active++;
     if(active > steps.length){
@@ -38,6 +42,7 @@ const updateProgress = () => {
 
     if (active == 1){
         prevButton.disabled = true;
+        nextButton.disabled = false;
     } else if (active == steps.length){
         nextButton.disabled = true;
         confirmData(); 
@@ -65,9 +70,10 @@ const confirmData = () => {
 
     for(let j = 0; j < data.length; j++){
         if (data[j] == null || data[j] == ""){
-            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red. The number of times you see this promopt is the number of fields you have not filled.");
+            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red.");
             active = 1;
             updateProgress();
+            break;
         }
     }
     document.getElementById('sklNameR').innerHTML = sklName;

@@ -5,6 +5,10 @@ const steps = document.querySelectorAll('.form-step');
 const form_steps = document.querySelectorAll('.step');
 let active = 1;
 
+submitButton.addEventListener('click', () => {
+    window.location.href = "https://synfinity.gsshsr.in/registrations/success";
+})
+
 nextButton.addEventListener('click', () => {
     active++;
     if(active > steps.length){
@@ -38,6 +42,7 @@ const updateProgress = () => {
 
     if (active == 1){
         prevButton.disabled = true;
+        nextButton.disabled = false;
     } else if (active == steps.length){
         nextButton.disabled = true;
         confirmData(); 
@@ -56,18 +61,17 @@ const confirmData = () => {
     std1Class = document.getElementById('std1Class').value;
     std2Name = document.getElementById('std2Name').value;
     std2Class = document.getElementById('std2Class').value;
-    std3Name = document.getElementById('std3Name').value;
-    std3Class = document.getElementById('std3Class').value;
     teamEmail = document.getElementById('teamEmail').value;
     teachEmail = document.getElementById('teachEmail').value;
 
-    const data =[sklName,sklEmail,accTeach,std1Name,std1Class,std2Class,std2Name,std3Class,std3Name,teamName,teamEmail,teachEmail];
+    const data =[sklName,sklEmail,accTeach,std1Name,std1Class,std2Class,std2Name,teamName,teamEmail,teachEmail];
 
     for(let j = 0; j < data.length; j++){
         if (data[j] == null || data[j] == ""){
-            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red. The number of times you see this promopt is the number of fields you have not filled.");
+            alert("Please fill the form properly. The incorrectly filled inputs are highlighted in red.");
             active = 1;
             updateProgress();
+            break;
         }
     }
 
@@ -79,8 +83,6 @@ const confirmData = () => {
     document.getElementById('std1ClassR').innerHTML = std1Class;
     document.getElementById('std2NameR').innerHTML = std2Name;
     document.getElementById('std2ClassR').innerHTML = std2Class;
-    document.getElementById('std3NameR').innerHTML = std3Name;
-    document.getElementById('std3ClassR').innerHTML = std3Class;
     document.getElementById('teamEmailR').innerHTML = teamEmail;
     document.getElementById('teachEmailR').innerHTML = teachEmail;
 }
