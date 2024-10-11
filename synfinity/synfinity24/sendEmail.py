@@ -24,7 +24,7 @@ def sendEmailPy(event, sklEmail, sklName, teachEmail, accTeach, teamEmail, teamN
             }
         ]
     templateId = 2
-    bcc = [{ "email": "patloyashwanthkumar2+synfinity@gmail.com" }]
+    bcc = [{ "email": "patloyashwanthkumar2@gmail.com" }]
     reply_to = {
             "email": "synfinity@gsshsr.in",
             "name": "GSSE Synfinity 2024"
