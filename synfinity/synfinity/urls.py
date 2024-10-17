@@ -18,8 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from .views import sitemap
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("synfinity24.urls"))
+    path("", include("synfinity24.urls")),
+    path("sitemap", sitemap),
 ]
