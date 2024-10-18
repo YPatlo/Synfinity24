@@ -220,7 +220,6 @@
     .logo{
       margin: -48px -48px 48px;
       padding: 40px 48px;
-      margin-left: 3.5em;
     }
     .progress ul.progress-steps{
       flex-direction: column;
