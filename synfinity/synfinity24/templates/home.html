@@ -529,7 +529,7 @@
           </section>
           <div class="section-benefits">
             <div class="benefits-component">
-              <div id="sponsors" class="page-padding">
+              <div class="page-padding">
                 <div class="padding-vertical padding-medium">
                   <div class="benefits-base">
                     <div class="benefits-strip">
@@ -604,7 +604,7 @@
             </div>
           </section>
         </div>
-        <section class="section-footer-action">
+        <section is="sponsors" class="section-footer-action">
           <div class="page-padding">
             <div class="padding-vertical padding-xhuge">
               <div class="footer-action-component">
@@ -618,33 +618,23 @@
                   <a href="/#sponsors" target="_blank" class="underline-link w-inline-block">
                     <div class="button-text"></div>
                   </a>
-                </div>
-                <div id="w-node-b8d350e8-96a0-1537-9c18-c5a6c9bd9ccc-c9bd9cb7" class="name-block">
-                  <div class="name-list-wrapper">
-                    <div class="name-list">
-                      <div class="name-item">
-                        <div>1</div>
-                      </div>
-                      <div class="name-item">
-                        <div>2</div>
-                      </div>
-                      <div class="name-item">
-                        <div>3</div>
-                      </div>
-                      <div class="name-item">
-                        <div>4</div>
-                      </div>
-                      <div class="name-item">
-                        <div>5</div>
-                      </div>
-                    </div>
+                  <div id='scroll-container'>
+                    <marquee behavior="scroll" direction="left" scrollamount="20">
+                      <img src="{% static 'images/image002.png' %}" height="150">
+                      <img src="{% static 'images/image copy.png' %}" height="150">
+                      <img src="{% static 'images/image copy 2.png' %}" height="150">
+                      <img src="{% static 'images/image copy 3.png' %}" height="150">
+                      <img src="{% static 'images/image.png' %}" height="150">
+                      <img src="{% static 'images/image copy 4.png' %}" height="150">
+                    </marquee>
+                    <div class='fade'></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section>
+        <section id="sponsors">
           <div class="section black-gradient w-clearfix">
             <div class="container">
               <div class="text-box _550px center-align">
@@ -696,7 +686,8 @@
                       <div class="footer-column">
                         <h1 class="heading-small">A unique <span class="special">Skill Based</span> Interschool Event. </h1>
                         <a href="/" aria-current="page" class="footer-brand w-inline-block w--current">
-                          <div>This is GSSE Synfinity.</div>
+                          <div><p>For any further queries kindly contact:</p><p>Ms. Bhagyalakshmi - +91 90353 60205</p>
+                            <p>Ms. Balaviswapriya - +91 90367 31985</p></div>
                         </a>
                       </div>
                       <div class="footer-column">
@@ -723,7 +714,7 @@
                                <div class="tooltip">LinkedIn</div>
                                <span><i class="fa-brands fa-linkedin-in"></i></span>
                             </a>
-                            <a href="https://www.instagram.com/gsse.synfinity" class="icon instagram">
+                            <a href="https://www.instagram.com/synfinity_2024" class="icon instagram">
                                <div class="tooltip">Instagram</div>
                                <span><i class="fab fa-instagram"></i></span>
                             </a>
